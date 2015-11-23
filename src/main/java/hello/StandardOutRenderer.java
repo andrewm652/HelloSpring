@@ -1,6 +1,8 @@
 package hello;
 
-public class StandardOutRenderer implements MessageRenderer {
+import org.springframework.beans.factory.InitializingBean;
+
+public class StandardOutRenderer implements MessageRenderer, InitializingBean {
 
     private MessageProvider provider;
 
@@ -20,5 +22,10 @@ public class StandardOutRenderer implements MessageRenderer {
     @Override
     public MessageProvider getMessageProvider() {
         return provider;
+    }
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        System.out.println("props inited");
     }
 }

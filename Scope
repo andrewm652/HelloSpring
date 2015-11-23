@@ -1,0 +1,19 @@
+Scope {
+    singleton
+    prototype
+
+    request
+    session
+    global-session
+}
+
+constructor-arg
+properties
+autowiring mode
+
+lazy-initialization mode {
+    lazy-init="true"
+}
+
+initialization method
+destruction method
