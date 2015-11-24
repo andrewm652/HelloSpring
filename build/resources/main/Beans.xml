@@ -8,7 +8,6 @@
     <bean id="provider" class="hello.HelloMessageProvider" />
     <bean id="renderer" class="hello.StandardOutRenderer"
             p:messageProvider-ref="provider"/>
-    <bean class="hello.HelloProcessor" />
         <!--<property name="messageProvider" ref="provider" />-->
     <!--</bean>-->
 </beans>
